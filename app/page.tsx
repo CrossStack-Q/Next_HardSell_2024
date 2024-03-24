@@ -35,7 +35,7 @@ export default async function Home() {
                 <Card id={item.id} key={`${item.name}-${idx}`} {...item} />
               ))}
           </div>
-        </div>89
+        </div>
 
         <h2 className="text-4xl mt-20 mb-16">ALL PRODUCTS</h2>
         {products && products.length > 0 ? (
