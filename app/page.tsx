@@ -15,13 +15,9 @@ export default async function Home() {
 
     const {data:TopProducts , error:TopProductsError } =  await supabase.from("easy-sell-products").select().eq("boost",true);
 
-  if (!products){
-    return notFound();
-  }
-
-
-  
-  
+  // if (!products){
+  //   return notFound();
+  // } 
   return (
     <main className="min-h-screen max-w-[100rem] mx-auto">
       <div className="px-12 pt-12 pb-20">
